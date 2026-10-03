@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    background-image: linear-gradient(to top, purple, rgb(92, 40, 159));
+    display: flex;
+    flex-direction: column;
+
+    padding: 4rem 5%;
+    height: 50vh;
+    align-items: center;
+
+    justify-content: center;
+    border-radius: 10px;
+    gap: 0.7rem;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+input{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+}
+
+button{
+    padding: 10px;
+    border-radius: 0.3rem;
+    border: none;
+    transition: .3s;
+}
+
+button:hover{
+    background-color:purple;
+}

@@ -1,18 +1,29 @@
-const info = document.getElementById("info");
-const btn = document.getElementById("btn");
-const emailInput = document.getElementById("email");
-const passwordInput  = document.getElementById("password")
+const nameInput = document.getElementById("nameinput");
+const scoreInput = document.getElementById("scoreinput");
+const ageInput = document.getElementById("ageinput");
+const btn = document.getElementById("btn")
+const courseInput = document.getElementById("courseinput")
+const info = document.getElementById("info")
 
- 
+
+
+
 btn.onclick = function () {
-   let enteredemail = "mk@gmail.com"
-   let eneteredpassword = "1234"
+    let enteredname = "Michael";
+    let enteredcourse = "CS"
 
-    if(emailInput.value === enteredemail &&
-        passwordInput.value === eneteredpassword
-    ) {
+    if(nameInput.value === enteredname && 
+        courseInput.value === enteredcourse
+    ){
         info.innerText = "Welcome"
-    } else{
-        info.innerText = "OUT"
+
     }
+    else if(scoreInput.value < 70 ||
+        ageInput.value < 18
+     ) {
+        info.innerText = "Age or Score "
+     }
+     else{
+        info.innerText ="Please fill in the form"
+     }
 }

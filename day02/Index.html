@@ -8,18 +8,30 @@
 </head>
 <body>
     <div class="container">
-        <p class="subtitle">Fill in Your Details</p>
+        <p>Fill in your details</p>
 
-        <label for="email">Email :</label>
-        <input type="email" name="" id="email">
+        <div class="form-group">
 
-        <label for="password">Password :</label>
-        <input type="password" name="" id="password">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name" id="nameinput">
+
+            <label for="age">Age:</label>
+            <input type="number" placeholder="Enter age" id=" ageinput">
+
+            <label for="course">Course:</label>
+            <input type="text" placeholder="Enter course of study" id="courseinput">
+
+            <label for="score">Score:</label>
+            <input type="number" placeholder="Enter score" id="scoreinput">
+
+        </div>
 
         <button type="submit" id="btn">Submit</button>
 
         <p id="info"></p>
+
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
