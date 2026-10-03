@@ -9,21 +9,30 @@ const info = document.getElementById("info")
 
 
 btn.onclick = function () {
-    let enteredname = "Michael";
+    
+    let enteredname = "MK";
     let enteredcourse = "CS"
+    let enteredscore = Number(scoreInput.value)
+    let enteredage = Number(ageInput.value)
 
-    if(nameInput.value === enteredname && 
+    if(!nameInput.value|| !courseInput.value || !scoreInput.value || !ageInput.value) {
+        info.innerText = "Please fill in all the fields in the form"
+        return;
+    }
+
+     if(enteredscore < 70 || enteredage < 18
+     ) {
+        info.innerText = "Age Must be 18+ score must be 70+ "
+        return;
+        
+     }   
+      if(nameInput.value === enteredname && 
         courseInput.value === enteredcourse
     ){
         info.innerText = "Welcome"
 
     }
-    else if(scoreInput.value < 70 ||
-        ageInput.value < 18
-     ) {
-        info.innerText = "Age or Score "
-     }
-     else{
-        info.innerText ="Please fill in the form"
-     }
+    else{
+        info.innerText = "Invalid name or course details"
+    }
 }
