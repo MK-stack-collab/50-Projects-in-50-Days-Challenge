@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html{
+    font-size: 20px;
+}
+
+body{
+    height: 100vh;
+    margin: auto;
+     display: flex;
+
+     justify-content: center;
+     align-items: center;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    background:linear-gradient(45deg, purple, black);
+    gap: 30px;
+
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.5);
+    border-radius: 20px;
+}
+
+#number-input{
+    height: 70px;
+    width: 290px;
+    padding: 15px;
+    
+    font-size: 1.5rem;
+    border-radius: 20px;
+    outline: none;
+
+    border: 0.5px solid grey;
+    text-align: right;
+
+}
+
+#number-grid{
+   display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+    
+}
+button{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+button:hover{
+ background-color: rgb(165, 161, 161);
+ color: white;
+
+}
+
+.equal{
+    grid-column: span 3;
+}
+
+.equal:hover{
+background-color: orange;
+}
+
+.delete{
+    font-size: 15px;
+}
+
+.full-stop{
+    font-size: 1rem;
+}
+
+button[value="C"] {
+    background: red;
+    font-size: 20px;
+    color: white;
+}
+button[value="+"] {
+    background: blue;
+    font-size: 20px;
+    color: white;
+}
+button[value="*"] {
+    background: blue;
+    font-size: 20px;
+    color: white;
+}
+button[value="/"] {
+    background: blue;
+    font-size: 20px;
+    color: white;
+}
+button[value="-"] {
+    background: blue;
+    font-size: 20px;
+    color: white;
+}
+button[value="⌫"] {
+    background: red;
+    font-size: 20px;
+    color: white;
+}
